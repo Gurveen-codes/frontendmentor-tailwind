@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--white-pale: hsl(225, 100%, 94%);
+	--blue-pry: hsl(245, 75%, 52%);
+	--white-paler: hsl(225, 100%, 98%);
+	--blue-desat: hsl(224, 23%, 55%);
+	--blue-dark: hsl(223, 47%, 23%);
+}
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	font-family: 'Red Hat Display', sans-serif;
+	background-image: url('/images/pattern-background-desktop.svg');
+	background-repeat: no-repeat;
+	display: grid;
+	place-items: center;
+}
+
+.card {
+	width: clamp(350px, 50%, 600px);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 0 2px 4px rgb(100, 95, 95, 0.5);
+	overflow: hidden;
+}
+
+.card .card-img {
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.card .card-content {
+	display: flex;
+	flex-direction: column;
+	margin: 2em auto;
+	width: 75%;
+	gap: 1em;
+}
+
+.card .card-title {
+	font-weight: 900;
+	color: var(--blue-dark);
+}
+
+.card .card-desc {
+	font-weight: 500;
+	color: var(--blue-desat);
+}
+
+.card .subscribe {
+	display: flex;
+	justify-content: space-around;
+	background-color: var(--white-pale);
+	padding: 1em 0;
+	border-radius: 10px;
+}
+
+.card .subscribe .sub-left {
+	display: flex;
+	gap: 0.5em;
+}
+
+.card .subscribe .sub-left h3 {
+	color: var(--blue-dark);
+	font-weight: 700;
+	margin-bottom: 0.25em;
+}
+
+.card .subscribe .sub-left p {
+	color: var(--blue-desat);
+}
+
+.card .subscribe .sub-right {
+	display: grid;
+	place-items: center;
+}
+
+.card .subscribe .sub-right a {
+	color: var(--blue-pry);
+}
+
+.card .subscribe .sub-right a:hover {
+	color: var(--blue-desat);
+}
+
+.card button {
+	border-radius: 10px;
+	padding: 0.5em 0;
+	font-weight: 700;
+	border: none;
+	transition: all 0.15s ease-in;
+}
+
+.card button:hover {
+	cursor: pointer;
+}
+
+.card .btn-pry {
+	background-color: var(--blue-pry);
+	color: var(--white-pale);
+}
+
+.card .btn-pry:hover {
+	background-color: var(--blue-desat);
+}
+
+.card .btn-sec {
+	color: var(--blue-desat);
+}
+
+.card .btn-sec:hover {
+	color: var(--blue-dark);
+}

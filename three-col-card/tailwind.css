@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+	@apply flex flex-col p-8 gap-6;
+}
+
+.card img {
+	@apply object-cover w-1/3;
+}
+
+.card .card-title {
+	@apply font-shoulders text-lgray text-4xl;
+}
+
+.card p {
+	@apply font-lexend text-twhite text-sm;
+}
+
+.card .card-btn {
+	@apply font-lexend bg-lgray text-sm inline-block w-min whitespace-nowrap  rounded-2xl px-6 py-2 mt-8 border-2 border-twhite box-border hover:bg-opacity-0 hover:text-lgray;
+}
