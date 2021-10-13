@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Four card feature section</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body class="font-poppins bg-sec-lightGray p-4">
+		<div class="text-center mb-12 md:mb-8 mt-8 max-w-xl mx-auto">
+			<h2 class="text-2xl font-light text-sec-darkBlue">
+				Reliable, efficient delivery
+			</h2>
+			<h1 class="text-2xl font-semibold text-sec-darkBlue my-2">
+				Powered by Technology
+			</h1>
+			<p class="text-sec-grayBlue mt-4 text-sm">
+				Our Artificial Intelligence powered tools use millions of project data
+				points to ensure that your project is successful
+			</p>
+		</div>
+		<div
+			class="
+				card-container
+				md:grid md:grid-cols-3 md:grid-rows-4 md:gap-4 md:px-6
+			"
+		>
+			<div
+				class="
+					card
+					border-t-4 border-pry-cyan
+					md:row-start-2 md:row-end-4 md:col-start-1 md:col-end-2
+				"
+			>
+				<div class="card-title">Supervisor</div>
+				<p class="card-desc">
+					Monitors activity to identify project roadblocks
+				</p>
+				<div class="card-img">
+					<img src="./images/icon-supervisor.svg" alt="" />
+				</div>
+			</div>
+			<div
+				class="
+					card
+					border-t-4 border-pry-red
+					md:row-start-1 md:row-end-3 md:col-start-2 md:col-end-3
+				"
+			>
+				<div class="card-title">Team Builder</div>
+				<p class="card-desc">
+					Scans our talent network to create the optimal team for your project
+				</p>
+				<div class="card-img">
+					<img src="./images/icon-team-builder.svg" alt="" />
+				</div>
+			</div>
+			<div
+				class="
+					card
+					border-t-4 border-pry-orange
+					md:row-start-3 md:row-end-5 md:col-start-2 md:col-end-3
+				"
+			>
+				<div class="card-title">Karma</div>
+				<p class="card-desc">
+					Regularly evaluates our talent to ensure quality
+				</p>
+				<div class="card-img">
+					<img src="./images/icon-karma.svg" alt="" />
+				</div>
+			</div>
+			<div
+				class="
+					card
+					border-t-4 border-pry-blue
+					md:row-start-2 md:row-end-4 md:col-start-3 md:col-end-4
+				"
+			>
+				<div class="card-title">Calculator</div>
+				<p class="card-desc">
+					Uses data from past projects to provide better delivery estimates
+				</p>
+				<div class="card-img">
+					<img src="./images/icon-calculator.svg" alt="" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

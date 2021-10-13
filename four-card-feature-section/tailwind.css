@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+	@apply bg-white flex gap-2 flex-col p-3 rounded-lg mt-8 shadow-lg md:p-5;
+}
+
+.card .card-title {
+	@apply text-xl font-semibold text-sec-darkBlue;
+}
+
+.card .card-desc {
+	@apply text-sm text-sec-grayBlue;
+}
+
+.card .card-img {
+	@apply flex justify-end;
+}
