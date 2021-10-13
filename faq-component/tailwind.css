@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+.card {
+	width: 90%;
+	position: relative;
+	background-image: url('./images/bg-pattern-mobile.svg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: -10px;
+	margin-top: 130px;
+}
+
+.card .card-img {
+	position: absolute;
+	top: -110px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.acc {
+	@apply font-normal text-sec-veryDarkBlue cursor-pointer hover:text-pry-softRed relative;
+}
+.acc.active {
+	@apply font-bold text-pry-text;
+}
+.acc::before {
+	content: url(./images/icon-arrow-down.svg);
+	position: absolute;
+	right: 5px;
+	top: 0;
+}
+.active::before {
+	transform: rotateX(180deg);
+}
+.panel {
+	@apply text-sec-darkBlue mt-4 max-h-0 overflow-hidden transition-all duration-300 ease-out;
+}
+
+.divider {
+	@apply w-full border-b-2 border-sec-lightBlue mb-2;
+}
+
+@media screen and (min-width: 375px) {
+	.card {
+		padding: 2em 0;
+		max-width: 700px;
+		margin-top: 0;
+		background-image: none;
+	}
+	.card .card-img {
+		position: absolute;
+		width: 50%;
+		left: -8%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
