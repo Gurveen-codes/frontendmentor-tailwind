@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Single Price Grid Component</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body
+		class="font-karla bg-sec-lightGray grid place-items-center min-h-screen"
+	>
+		<div
+			class="
+				card
+				bg-white
+				w-5/6
+				mt-8
+				md:mt-0
+				rounded-lg
+				shadow-md
+				max-w-3xl
+				overflow-hidden
+			"
+		>
+			<div class="banner p-4 md:p-8">
+				<h1 class="text-xl text-pry-cyan font-bold">Join our community</h1>
+				<h2 class="font-bold text-pry-yellow my-3">
+					30-day, hassle-free money back guarantee
+				</h2>
+				<p class="text-sec-blueGray text-sm">
+					Gain access to our full library of tutorials along with expert code
+					reviews. Perfect for any developers who are serious about honing their
+					skills.
+				</p>
+			</div>
+			<div class="md:grid md:grid-cols-2">
+				<div
+					class="
+						subscription
+						p-4
+						md:p-8
+						bg-pry-cyan
+						text-sec-lightGray
+						flex flex-col
+						gap-3
+					"
+				>
+					<h2 class="font-bold text-xl">Monthly Subscription</h2>
+					<div class="flex items-center gap-2">
+						<h1 class="font-bold text-4xl">&dollar;29</h1>
+						<span class="text-sm">per month</span>
+					</div>
+					<p>Full access for less than &dollar;1 a day</p>
+					<div class="flex justify-center items-center">
+						<button
+							class="
+								bg-pry-yellow
+								text-center
+								font-bold
+								inline-block
+								w-full
+								py-2
+								rounded
+								shadow-md
+								mt-4
+							"
+						>
+							Sign Up
+						</button>
+					</div>
+				</div>
+				<div
+					class="about bg-pry-cyanLight p-4 md:p-8 text-sec-lightGray text-sm"
+				>
+					<h2 class="text-xl font-bold mb-4">Why Us</h2>
+					<div class="">Tutorials by industry experts</div>
+					<div class="">Peer &amp; expert code review</div>
+					<div class="">Coding exercises</div>
+					<div class="">Access to our GitHub repos</div>
+					<div class="">Community forum</div>
+					<div class="">Flashcard decks</div>
+					<div class="">New videos every week</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
