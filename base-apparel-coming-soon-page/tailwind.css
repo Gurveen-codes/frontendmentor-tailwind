@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.input-container button {
+	border-radius: 1.7em;
+	min-height: 100%;
+	width: 20%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+	right: 1.5px;
+}
+
+.input-container input::placeholder {
+	font-size: 0.9rem;
+}
+
+.warn {
+	visibility: hidden;
+}
+
+img.warn {
+	top: 50%;
+	left: 70%;
+	transform: translateY(-50%);
+}
+
+p.warn {
+	top: 120%;
+	left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+	body {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 50px 1fr;
+		row-gap: 50px;
+	}
+}
